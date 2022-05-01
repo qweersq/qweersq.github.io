@@ -1,174 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>My Porfolio</title>
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://maaf.feeldream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://maaf.feeldream.repl.co/script.js"></script>
+<head>
+<!-- Edit Judul Script di Sini -->
+  <title>Script HTML Maafin Aku Ya</title>
+<!-- 
+  Made with love by Rayys!
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+  Thanks to all <3
+-->
+</head>
+<style>
+:root {
+--warna-bg: rgba(0, 0, 0, .55); 
+--warna-teks: white;
+--bingkai: 14px;
+--gaya-font: 'Ubuntu', sans-serif;
+}
+</style>
+<body><div id="bodyblur"><img id="wallpaper" src="" width="100%" height="100%"/><div id="beneranblur"></div></div>
+
+<div id='Content'>
+
+<div><marquee id="imglewat" direction="right"><img id="fotonimasi" src="" width="100px" height="100px"/></marquee></div>
+
+<p id="idgeser"></p><p id="idkalimat"></p><p id="idmarq"><marquee id="palingakhir" direction="left"></marquee></p>
+
+<div id="contTom" style="display:none;"><a id="By" class='button' onClick="terima()"></i>Mau</a><b id='buttonv2'></b><a id="Bn" class='button' onClick="tolak()"></i>Gamau</a></div>
+
+<p id="idakhir" onClick="idakhir.style='display:none';jawab()";>[ Kirim Pesan ]</p>
+</div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  function nongeser() {idgeser.style = "transform: scale(.1);opacity:0";fotolove.style="opacity:1;visibility:visible";}
+  function showDiv() {setTimeout(akhiran,300);document.getElementById('bodyblur').style = "opacity:.85;";document.getElementById('Content').style = "opacity:1;margin-top:10vh;animation:none 3s infinite;";}
+  function showAkhir() {setInterval(createHeart,200);document.getElementById('k2').style = "opacity:1;transform:scale(1);margin:0;";document.getElementById('Content').style.display = "none";}
+  function mulaiakhir() {nonDiv();setTimeout(showAkhir,500);setTimeout(finalis,600);}
+  function showTom() {document.getElementById('idkirim').style = "display:block;";}
+  function otomatis() {befanimkata();setTimeout(animkata,400);contTom.style="display:none";idakhir.style="display:flex";setTimeout(kirimpesan,1200);}
+  function befanimkata(){idgeser.style="transform:scale(.01);";idkalimat.style="transform:scale(.01);";} function animkata() {idgeser.style="transform:scale(1);";idkalimat.style="transform:scale(1);";}
+  var aa=0,pemb;pemb = "";var i=0,halo;halo = "";var u=0,text2;text2 = "";var o=0,text3;text3 = "";var a=0,final1;final1 = "";var ab=0,final2;final2 = "";
+  function finalis() {document.getElementById("bq").style = "opacity:1;visibility:visible;margin-top:0";setTimeout(showTom,4000);}
+  const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',}); const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 1000, timerProgressBar: true, didOpen: () => {Swal.showLoading();const b = Swal.getHtmlContainer().querySelector('b');timerInterval = setInterval(() => {Swal.getTimerLeft()}, 100)},willClose: () => {clearInterval(timerInterval)}}); const style = document.createElement('style'); const swalstime = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 2700, timerProgressBar: true, imageWidth: 100, imageHeight: 100,});
+  function play() {var audio = new Audio('' + linkmp3);audio.play();}
+  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+  var aa=0,akhirkata;akhirkata = "";function aksiakhir() {bodyblur.style="animation: jj 7s infinite";if(aa<akhirkata.length){idgeser.innerHTML += akhirkata.charAt(aa);aa++;setTimeout(aksiakhir,85);}
+    if(aa==akhirkata.length){idkalimat.style = "opacity:1;transform: scale(1);font-size:16px;margin-top:20px";setTimeout(showakhir,1200);} function showakhir(){contTom.style="display:flex";}
+   } function showpalingakhir(){palingakhir.style = "opacity:1;transform: scale(1);font-size:16px;";setTimeout(kirimpesan,1200);} function kirimpesan(){idakhir.style="opacity:1;transform: scale(1);margin-top:60px"}
+  async function tolakteks(){await swalstime.fire({title: '' + teksnolak, timer: 1200,});}
+
+  flag=1;flagg=1;fungsi=1;function tolak(){
+  	if(flagg==1){Bn.style="margin-left:90px;transform: rotate(45deg)";buttonv2.style="opacity:1;";By.style="opacity:0";document.getElementById("buttonv2").innerHTML = tekstolak1;flagg=2}
+  	    else if(flagg==2){Bn.style="margin-left:95px;transform: rotate(135deg)";document.getElementById("buttonv2").innerHTML = tekstolak2;flagg=3}
+  		else if(flagg==3){Bn.style="margin:12px 8px 12px 0;transform: rotate(0deg)";buttonv2.style="opacity:0;";tolakteks();By.style="opacity:1";flagg=1}
+   }
+    async function terima(){
+            if(fungsi==1){otomatis();setTimeout(StartMarqueeLR,300);setTimeout(showpalingakhir,500);idkalimat.style="display:none";idgeser.innerHTML = akhirkataa;idkalimat.innerHTML = akhirkataa;fungsi=2;}
+    }
+</script>
+
+<!-- Edit Bagian Ini yaa.
+  Untuk gambar/gif silakan upload fotonya
+  ke https://postimages.org untuk dapetin
+  linknya.
+  Sedangkan untuk audio upload ke
+  https://www.replit.com.
+-->
+<script type="text/javascript">
+       async function jawab(){
+           var { value: jawaban } = await swals.fire({
+               title: 'Isi Pesan Kamu', input: 'text', allowOutsideClick: false, showCancelButton: false,
+           });
+           if(jawaban && jawaban.length < 21){
+           	window.jawaban = jawaban;pesanwhatsapp = jawaban;menuju();
+           } else {
+               await swals.fire('Ups!', 'Kolom tidak boleh kosong atau lebih dari 20 karakter, ya!');
+           }
+       }
+        
+       async function pertama(){
+       	 wallpaper.src = "https://i.ibb.co/pPzdCpJ/IMG-20220327-124709-714.jpg";
+            fotonimasi.src = "https://i.postimg.cc/KjgMkqbH/d186d40026c605b289fa1b062d112df4.gif";
+       	 audio = new Audio('https://maaf.feeldream.repl.co/bgm.mp3');
+       
+            akhirkata = "Sekian ";
+            akhirkata2 = "Kamu Mau Maafin Aku Kan? &#129325;";
+            akhirkataa = "Yeayyy!";
+            palingakhir.innerHTML = "Makasii udah mau maafin &#129315;";
+            
+            tekstolak1 = "Eits &#128541;";
+            tekstolak2 = "Gabisa &#128541;";
+            teksnolak = "Harus maafin!!! &#128541;";
+            
+            await swalst.fire('Tunggu');lanjut();
+        }
+        pertama();
+        
+   async function lanjut() {
+     await swals.fire('Selamat datang!', 'Sekarang lihat ini ya :)');audio.play();
+            
+     await swalstime.fire({
+      title: 'Hai kamu', 
+      imageUrl: 'https://bukaini.feeldream.repl.co/yyy.gif',
+    });
+   
+    await swalstime.fire({
+      title: 'Lebaran kurang beberapa hari lagi nih', 
+      imageUrl: 'https://bukaini.feeldream.repl.co/222.gif',  
+    });
+   
+    await swalstime.fire({
+      title: 'Aku minta maaf ya kalo punya salah', 
+      imageUrl: 'https://bukaini.feeldream.repl.co/ww.gif',  
+    });
     
-    <!-- jumbotron -->
-    <div class="jumbotron text-center">
-      <img src="img/hadad.jpg" class="img-circle">
-      <h1>qweersq</h1>
-      <p>Learner | Web Developer | YouTuber</p>
-    </div>
-    <!-- akhir jumbotron -->
-
-
-    <!-- about -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">About</h2>
-            <hr>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-5 col-sm-offset-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aut fuga recusandae ad vero voluptates voluptatibus iusto expedita voluptas animi itaque, ratione commodi pariatur. Quia veniam hic eius iure quis.</p>
-          </div>
-          <div class="col-sm-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ipsam, veritatis nesciunt eveniet voluptas labore quidem recusandae enim, repudiandae ab accusantium consectetur minus optio adipisci voluptates omnis consequuntur dolore qui?</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- akhir about -->
-
-
-
-    <!-- portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2>Portfolio</h2>
-            <hr>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/1.png">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/2.png">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/3.png">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/4.png">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/5.png">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/6.png">
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- akhir portfolio -->
-
-
-    <!-- contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2>Contact</h2>
-            <hr>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <form>
-              <div class="form-group">
-                <label for="nama">Nama</label>
-                <input type="text" id="nama" class="form-control" placeholder="masukkan nama">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="masukkan email">
-              </div>
-              <div class="form-group">
-                <label for="telp">No Telepon</label>
-                <input type="tel" id="telp" class="form-control" placeholder="masukkan no telepon">
-              </div>
-              <select class="form-control">
-                <option>-- Pilih Kategori --</option>
-                <option>Web Design</option>
-                <option>Web Development</option>
-              </select>
-              <div class="form-group">
-                <label for="pesan">Pesan</label>
-                <textarea class="form-control" rows="10" placeholder="masukkan pesan"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- akhir contact -->
-
+    await swalstime.fire({
+      title: 'Maaf kalo sering bikin kamu marah', 
+      imageUrl: 'https://bukaini.feeldream.repl.co/www.gif',  
+    });
     
-    <!-- footer -->
-    <footer>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-12">
-            <p>&copy; copyright 2017 | built with <i class="glyphicon glyphicon-heart"></i> by. <a href="http://instagram.com/sandhikagalih">Sandhika Galih</a>.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <a href="http://youtube.com/webprogrammingunpas" class="btn btn-danger"><i class="glyphicon glyphicon-play"></i> Subscribe to YouTube</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- akhir footer -->
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    showDiv();
+   }
+</script>
+<script>
+function StartMarqueeL(){imglewat.style="opacity:1;height:100px;";var marquee = document.getElementById ("imglewat");marquee.start();}function StopMarqueeL(){var marquee = document.getElementById ("imglewat");marquee.stop();}StopMarqueeL(); function StartMarqueeLR(){var marquee = document.getElementById ("palingakhir");marquee.start();}function StopMarqueeLR(){var marquee = document.getElementById ("palingakhir");marquee.stop();}StopMarqueeLR(); function akhiran(){wallpaper.style="transform: scale(1)";beneranblur.style="-webkit-backdrop-filter:blur(1px); backdrop-filter:blur(1px)";StartMarqueeL();idgeser.innerHTML = "";idkalimat.innerHTML = akhirkata2;idgeser.style = "opacity:1;transform: scale(1);";setTimeout(aksiakhir,400);}
+</script>
+</body>
 </html>
-
-
-
-
